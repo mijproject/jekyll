@@ -1,0 +1,19 @@
+---
+layout: default
+title: home
+---
+
+<div>
+  <p>welcome to this site</p>
+  {% for post in site.posts %}
+  <article>
+    <time datetime="{{ post.date | date_to_xmlschema }}"><small>{{ post.date | date_to_string }}</small></time>
+    <h2>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    {% if post.description %}
+    <p><em>{{ post.description }}</em></p>
+    {% endif %}
+  </article>
+  {% endfor%}
+</div>
