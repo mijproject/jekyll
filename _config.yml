@@ -1,5 +1,6 @@
 title: site title
 description: site description
+url: https://mijproject.github.io
 baseurl: /jekyll
 permalink: pretty
 timezone: Asia/Jakarta
