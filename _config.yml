@@ -1,0 +1,13 @@
+title: site title
+description: site description
+permalink: pretty
+timezone: Asia/Jakarta
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+author:
+  name: site author
+  email: authoremail@mail.com
+version: 1.0.0
