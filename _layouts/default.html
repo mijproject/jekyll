@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% if page.name == "index.html" %}
+      {{ site.title }}{% if site.description %} &middot; {{ site.description }}{% endif %}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+    </title>
+    <link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'normalize.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'stylesheet.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <a href="{{ site.url }}">{{ site.title }}</a>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <small>✌</small>
+    </footer>
+  </body>
+</html> 
